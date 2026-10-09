@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusHub | College Study Portal</title>
+    <meta
+      name="description"
+      content="CampusHub helps students access syllabus, notes, and previous year question papers for better academic preparation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusHub</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#resources">Resources</a>
+          <a href="#departments">Departments</a>
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-button">Student Login</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">One platform for academic success</span>
+            <h1>Study smarter with your college syllabus, notes, and past papers.</h1>
+            <p>
+              Access semester-wise syllabus, readable notes, and previous year question papers in one place.
+              Designed for college students who want focused preparation and better exam results.
+            </p>
+            <div class="hero-actions">
+              <a href="#resources" class="primary-btn">Explore Resources</a>
+              <a href="#features" class="secondary-btn">How it works</a>
+            </div>
+            <ul class="hero-stats" aria-label="Student-friendly stats">
+              <li><strong>1200+</strong><span>Notes</span></li>
+              <li><strong>350+</strong><span>Question Papers</span></li>
+              <li><strong>18+</strong><span>Departments</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Academic resource preview">
+            <div class="mini-panel">
+              <span class="panel-label">This week</span>
+              <h3>Semester 6</h3>
+              <div class="mini-list">
+                <div>
+                  <span>Data Structures</span>
+                  <strong>12 notes</strong>
+                </div>
+                <div>
+                  <span>Operating Systems</span>
+                  <strong>8 papers</strong>
+                </div>
+                <div>
+                  <span>Database Systems</span>
+                  <strong>5 syllabus files</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Resources Hub</span>
+            <h2>Everything students need to prepare well</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="Resource categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="syllabus">Syllabus</button>
+            <button class="filter-btn" data-filter="notes">Notes</button>
+            <button class="filter-btn" data-filter="papers">Question Papers</button>
+          </div>
+
+          <div id="resource-grid" class="resource-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="departments" class="departments-section">
+        <div class="container">
+          <div class="section-heading left">
+            <span class="eyebrow">Popular departments</span>
+            <h2>Prepared for every academic stream</h2>
+          </div>
+
+          <div class="department-grid">
+            <article class="department-card">
+              <div class="dept-icon">CS</div>
+              <h3>Computer Science</h3>
+              <p>Programming, DBMS, OS, web technologies, and placement-oriented materials.</p>
+            </article>
+            <article class="department-card">
+              <div class="dept-icon">EC</div>
+              <h3>Electronics</h3>
+              <p>Digital circuits, communication systems, microcontrollers, and lab revision notes.</p>
+            </article>
+            <article class="department-card">
+              <div class="dept-icon">ME</div>
+              <h3>Mechanical</h3>
+              <p>Thermodynamics, CAD, manufacturing, and engineering drawing support.</p>
+            </article>
+            <article class="department-card">
+              <div class="dept-icon">CE</div>
+              <h3>Civil</h3>
+              <p>Structural engineering, construction materials, surveying, and design references.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features-section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Why students choose us</span>
+            <h2>Built to make studying easier</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">📘</div>
+              <h3>Semester syllabus</h3>
+              <p>Clear academic structure for each course, semester, and department.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">📝</div>
+              <h3>Short notes</h3>
+              <p>Easy-to-read summaries for quick revision before unit tests and finals.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>Practice papers</h3>
+              <p>Previous year question papers to improve speed, confidence, and recall.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">Smart study companion</span>
+            <h2>Start learning with the best academic resources.</h2>
+          </div>
+          <a href="#resources" class="primary-btn">Browse now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">C</span>
+            <span>CampusHub</span>
+          </div>
+          <p>Made for students who want better preparation and stronger academic results.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#resources">Resources</a>
+          <a href="#departments">Departments</a>
+          <a href="#features">Features</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
